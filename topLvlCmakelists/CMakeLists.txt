@@ -26,8 +26,8 @@ else()
 	include_directories(/usr/local/include)
 	include_directories(/usr/local/lib)
 	IF (${Protobuf_FOUND})
-		message(STATUS "protobuf version: " ${Protobuf_VERSION}) 
-		message(STATUS "protobuf path: " ${PROTOBUF_INCLUDE_DIR}) 
+		message(STATUS "protobuf version: " ${Protobuf_VERSION})
+		message(STATUS "protobuf path: " ${PROTOBUF_INCLUDE_DIR})
 	ELSE (${Protobuf_FOUND})
 		MESSAGE(STATUS "Could not locate Protobuf.")
 	ENDIF (${Protobuf_FOUND})
@@ -35,7 +35,7 @@ else()
 endif()
 
 
-#set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 
 #############################
